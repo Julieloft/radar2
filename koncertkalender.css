@@ -1,0 +1,299 @@
+/**
+ * file: css/genbrugstøj.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    /* Farvepalette: */
+        --moerkeblaa: rgb(3, 22, 51); 
+        --hvid: #ffffff;
+        --pink: #D31776;
+        --blaa: #2C57A4;
+        --lyselilla: #a83a8aff;
+        --lilla: #774c97ff;
+    }
+
+      h1{
+        font-family: "Lexend";
+        font-weight: 900;
+        font-size: 6rem;
+        color: var(--hvid);
+        text-align: left;
+      }  
+
+      h2{
+        font-family: "Lexend";
+        font-weight: 900;
+        font-size: 5rem;
+        color: var(--hvid);
+        text-align: right;
+      }
+
+      h3{
+        font-family: "Lexend";
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: var(--hvid);
+        text-align: center;
+      }
+
+      h4{
+        font-family: "Lexend";
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: var(--hvid);
+        text-align: center;
+      }
+
+      h5{
+        font-family: "Lexend";
+        font-weight: 800;
+        font-size: 1.2rem;
+        color: var(--hvid);
+        text-align: right;
+        margin-top: -0.5rem;
+      }
+
+      h6{
+        font-family: "Lexend";
+        font-weight: 500;
+        font-size: 0.8rem;
+        color: var(--hvid);
+        text-align: left;
+        margin-bottom: -1.2rem;
+      }
+
+       p{
+        font-family: "Lexend";
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--hvid);
+      }
+    
+       * {
+        margin: 0;
+        padding: 0;
+         box-sizing: border-box;
+      } 
+    
+      header{
+        background-color: var(--moerkeblaa);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+    
+      .menu-bar {
+        display: none;
+      }
+    
+      .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+     }
+    
+      .logo img {
+        width: 25rem;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    
+      .navbar ul a {
+        color: var(--hvid);
+        font-size: 1.5rem;
+        font-family: "krub";
+        font-weight: 600;
+        text-decoration: none;
+      }
+    
+    .navbar ul a:hover {
+        color: var(--hvid);
+        text-decoration: underline;
+    }
+    
+    .navbar ul {
+        display: none; /* Skjul menuen som standard */
+        flex-direction: column;
+        position:absolute;
+        left: 70rem;
+        right: 1rem;
+        padding: 1rem;
+        list-style: none;
+        align-items: left;
+    }
+    
+    #menu-bar:checked ~ ul {
+        display: flex; /* Vis menuen, når checkboxen er markeret */
+    }
+    
+    .burger-label {
+        display: block;
+        width: 10rem;
+        font-size: 7rem;
+        padding-left: 5.2rem;
+    }
+    
+    .burger-label img {
+      width: 4rem;
+      margin-top: 3.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .headerstreg img {
+        height: 4rem;
+        width: 100%;
+        margin-top: -2rem;
+    }
+
+    .streg img {
+        height: 4rem;
+        width: 100%;
+    }
+    
+    main {
+      background-color: var(--moerkeblaa);
+    }
+    
+    body{
+      background-color: var(--moerkeblaa);
+    }
+    
+    .kalendertekst {
+        margin-bottom: 5rem;
+    }
+
+    .aarstal {
+        margin-right: 0.5rem;
+    }
+
+    .maaned {
+        margin-bottom: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    .kunstnere, .kunstnere2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+    .kunstnere3 {
+        margin-left: 1.9rem;
+    }
+
+    .kunstnere4 {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 1.9rem;
+    }
+
+    .kunstnere4 article {
+        flex: 1; /* Sørger for, at alle kolonner fylder lige meget */
+      }
+
+      #kunstner1, #kunstner2, #kunstner3, #kunstner5, #kunstner6, #kunstner7, #kunstner8, #kunstner9, #kunstner10 {
+        height: auto;
+        width: 28rem;
+      }
+
+      #kunstner4 {
+        height: auto;
+        width: 28rem;
+        margin-left: 3.5rem;
+      }
+
+      .kunstner1, .kunstner2, .kunstner3, .kunstner4, .kunstner5, .kunstner6, .kunstner7, .kunstner8, .kunstner9 {
+        position: relative;
+        max-width:fit-content;
+      }
+
+      .kunstner10 {
+        background-color: transparent; /* Gør den tomme kolonne usynlig (kan tilpasses) */
+      }
+
+      .kunstner1:hover, .kunstner2:hover, .kunstner3:hover, .kunstner4:hover, .kunstner5:hover, .kunstner6:hover, .kunstner7:hover, .kunstner8:hover, .kunstner9:hover {
+        transform:scale(1.1);
+        transition: .5s ease;
+      }
+
+      .overlay {
+        position:bottom;
+        background: var(--pink);
+        color: #f1f1f1;
+        width:100%;
+        transition: .5s ease;
+        opacity:0;
+        padding: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-align:left;
+      }
+
+      .overlay1 {
+        position:bottom;
+        background: var(--lyselilla);
+        color: #f1f1f1;
+        width:100%;
+        transition: .5s ease;
+        opacity:0;
+        padding: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-align:left;
+      }
+
+      .overlay2 {
+        position:bottom;
+        background: var(--lilla);
+        color: #f1f1f1;
+        width:100%;
+        transition: .5s ease;
+        opacity:0;
+        padding: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        text-align:left;
+      }
+      
+      /* When you mouse over the container, fade in the overlay title */
+      .kunstner1:hover .overlay, .kunstner2:hover .overlay1, .kunstner3:hover .overlay2, .kunstner4:hover .overlay, .kunstner5:hover .overlay1, .kunstner6:hover .overlay2, .kunstner7:hover .overlay, .kunstner8:hover .overlay, .kunstner9:hover .overlay1 {
+         opacity: 1.1;
+         transform:scale(1.0);
+         margin-bottom: 4%;
+         margin-top: -1rem;
+      }
+       
+    
+    .footerstreg img {
+      height: 4rem;
+      width: 100%;
+    }
+    
+    .footerindhold {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+    
+    .footer-section{
+      margin-right: 50rem;
+    }
+    
+    .somelogoer {
+      display: flex;
+      margin-left: 5rem;
+      margin-right: -4rem;
+    }
+    
+    .somelogoer img {
+      height: 3rem;
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }

@@ -1,0 +1,266 @@
+/**
+ * file: css/shopgenbrugstøj.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    /* Farvepalette: */
+         --moerkeblaa: #031633ff; 
+         --hvid: #ffffff;
+         --pink: #D31776;
+         --blaa: #2C57A4;
+         --lyselilla: #a83a8aff;
+         --lilla: #774c97ff;
+       }
+    
+       h1{
+        font-family: "Lexend";
+        font-weight: 900;
+        font-size: 6rem;
+        color: var(--hvid);
+        text-align: left;
+      }  
+
+      h2{
+        font-family: "Lexend";
+        font-weight: 900;
+        font-size: 6rem;
+        color: var(--hvid);
+        text-align: right;
+      }  
+
+      h3{
+        font-family: "Lexend";
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: var(--hvid);
+        text-align: right;
+      }
+
+      h4{
+        font-family: "Lexend";
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+        color: var(--hvid);
+        text-align: right;
+      }
+
+      h5{
+        font-family: "Lexend";
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+        color: var(--hvid);
+        text-align: left;
+      }
+
+      h6{
+        font-family: "Lexend";
+        font-weight: 400;
+        font-size: 1.5rem;
+        color: var(--hvid);
+        text-align: left;
+      }
+
+       p{
+        font-family: "krub";
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: var(--hvid);
+      }
+    
+       * {
+        margin: 0;
+        padding: 0;
+         box-sizing: border-box;
+      } 
+    
+      header{
+        background-color: var(--moerkeblaa);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+    
+      .menu-bar {
+        display: none;
+      }
+    
+      .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+     }
+    
+      .logo img {
+        width: 25rem;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+    
+      .navbar ul a {
+        color: var(--hvid);
+        font-size: 1.5rem;
+        font-family: "krub";
+        font-weight: 600;
+        text-decoration: none;
+      }
+    
+    .navbar ul a:hover {
+        color: var(--hvid);
+        text-decoration: underline;
+    }
+    
+    .navbar ul {
+        display: none; /* Skjul menuen som standard */
+        flex-direction: column;
+        position:absolute;
+        left: 70rem;
+        right: 1rem;
+        padding: 1rem;
+        list-style: none;
+        align-items: left;
+    }
+    
+    #menu-bar:checked ~ ul {
+        display: flex; /* Vis menuen, når checkboxen er markeret */
+    }
+    
+    .burger-label {
+        display: block;
+        width: 10rem;
+        font-size: 7rem;
+        padding-left: 5.2rem;
+    }
+    
+    .burger-label img {
+      width: 4rem;
+      margin-top: 3.5rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    main {
+      background-color: var(--moerkeblaa);
+    }
+    
+    body{
+      background-color: var(--moerkeblaa);
+    }
+
+    .frivilligbillede img{
+        width: 100%;
+      }
+
+    .overskrift {
+        margin-left: 0.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .headerstreg img {
+        height: 4rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .tekst1 {
+        margin-right: 0.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .overskrift2 {
+        margin-right: 0.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .tekst2 {
+        margin-left: 0.5rem;
+        margin-bottom: 4rem;
+    }
+
+    form {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      label {
+        font-family: "Lexend";
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 0.5rem; /* Giver lidt afstand mellem label og input */
+        color: var(--hvid);
+        display: block;       /* Sørger for, at label står alene over input */
+      }
+      
+      input[type=text] {
+        width: 40rem;
+        height: 2.5rem;
+        font-family: "Lexend";
+        font-weight: 500;
+        color: var(--hvid);
+        margin-bottom: 2rem;
+        border: 3px solid var(--hvid);
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      input[type=text1] {
+        width: 40rem;
+        height: 7rem;
+        font-family: "Lexend";
+        font-weight: 500;
+        color: var(--hvid);
+        margin-bottom: 2rem;
+        border: 3px solid var(--hvid);
+        background-color: rgba(0, 0, 0, 0);
+      }
+
+      .container7 {
+        display: flex;
+        justify-content: center; /* Centrerer knappen */
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .container7 button img {
+        display: block;
+        width: 9rem; /* Tilpasser billedets bredde */
+        height: auto;
+      }
+    
+    .footerstreg img {
+      height: 4rem;
+      width: 100%;
+      margin-top: -2rem;
+    }
+    
+    .footerindhold {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+    
+    .footer-section{
+      margin-right: 50rem;
+    }
+    
+    .somelogoer {
+      display: flex;
+      margin-left: 5rem;
+      margin-right: -4rem;
+    }
+    
+    .somelogoer img {
+      height: 3rem;
+      margin-left: 2rem;
+      margin-top: 1rem;
+    }
